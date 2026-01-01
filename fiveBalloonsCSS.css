@@ -1,0 +1,89 @@
+body {
+    height: 100vh;
+    font-family: "Baloo 2", sans-serif;
+    position: relative;
+    padding: 20px;
+}
+/*overflow: hidden*/
+
+h1 {
+    font-size: 48px;
+}
+
+.butt {
+    position: absolute;
+    top: 30px;
+    right: 30px;
+
+    font-family: "Quicksand", sans-serif;
+    font-size: 16px;
+    font-weight: 600;
+
+    padding: 12px 24px;
+    background-color: black;
+    color: white;
+
+    border: 2px solid black;
+    border-radius: 30px;
+
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.butt:hover {
+    background-color: white;
+    color: black;
+}
+
+.door {
+    position: absolute;
+    bottom: 80px;
+    left: 20px;
+    background: none;
+    border: none;
+    cursor: pointer;
+    width: 400px;
+}
+
+.door img{
+    height: 400px;
+}
+
+.button,
+.button1,
+.button2,
+.button3,
+.button4 {
+    bottom: 80px;
+    position: absolute;
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+.button  { right: 20px; }
+.button1 { right: 150px; }
+.button2 { right: 280px; }
+.button3 { right: 410px; }
+.button4 { right: 540px; }
+
+.button img,
+.button1 img,
+.button2 img,
+.button3 img,
+.button4 img {
+    height: 300px;
+    transition: transform 0.4s ease;
+}
+
+.button:hover img,
+.button1:hover img,
+.button2:hover img,
+.button3:hover img,
+.button4:hover img {
+    transform: translateY(-15px);
+}
+
+#howPlay{
+    display: none
+}
