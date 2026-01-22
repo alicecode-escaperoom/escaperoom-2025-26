@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../style/styletwo.css">
+</head>
+<body>
+   
+
+    <img src="../img/riddle-removebg-preview.png" class="center-image"/>
+
+    <input type="text" placeholder="answer the riddle..." class="center-input" id="answer">
+    <button onclick="checkAnswer()" class="checkbtn">CHECK</button>
+<p id="result" class="answer"></p>
+
+<img 
+  src="../img/ghost-removebg-preview.png" 
+  class="ghost"
+  id="ghost"
+/>
+
+
+<script>
+function checkAnswer() {
+  const userAnswer = document.getElementById("answer").value.toLowerCase();
+  const correctAnswer = "ghost";
+  const ghost = document.getElementById("ghost");
+
+  if (userAnswer === correctAnswer) {
+    document.getElementById("result").innerText = "correct 👻";
+    ghost.classList.remove("chase");
+  } else {
+    document.getElementById("result").innerText = "Oh no! try again ";
+    ghost.classList.add("chase");
+  }
+}
+</script>
+
+</body>
+</html>
+

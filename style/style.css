@@ -1,0 +1,25 @@
+html, body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+}
+
+body {
+  background-image: url("../img/bgpic.png");
+  background-repeat: no-repeat;     /* show once */
+  background-position: center;      /* center */
+  background-size: cover;           /* FULL SCREEN */
+}
+
+
+.ghost {
+  position: absolute;
+  top: 45%;
+  left: 58%;
+  transform: translate(-50%, -50%);
+}
+
+
+.key {
+  width: 2cm;
+}
