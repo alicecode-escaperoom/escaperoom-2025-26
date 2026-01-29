@@ -1,0 +1,94 @@
+.title{
+    text-align: center;
+    font-size: 48px;
+    font-family: "Baloo 2", sans-serif;
+}
+
+p{
+    text-align: center;
+    font-family: "Quicksand", sans-serif;
+}
+
+.start {
+  display: block;
+  width: max-content;
+  margin: 0 auto;
+  background: #edc79297;
+  padding: 4px 8px;
+  border-radius: 6px;
+}
+
+.start:hover {
+    transform: translateY(15px);
+}
+
+.story {
+  display: block;
+  width: max-content;
+  margin: 0 auto;
+  background: #edc79297;
+  padding: 4px 8px;
+  border-radius: 6px;
+}
+
+.story:hover {
+    transform: translateY(15px);
+}
+
+.end {
+  display: block;
+  width: max-content;
+  margin: 0 auto;
+  background: #edc79297;
+  padding: 4px 8px;
+  border-radius: 6px;
+}
+.end:hover {
+    transform: translateY(15px);
+}
+
+.butt {
+    position: absolute;
+    margin-left: 550px;
+
+    font-family: "Quicksand", sans-serif;
+    font-size: 16px;
+    font-weight: 600;
+
+    padding: 12px 24px;
+    background-color: black;
+    color: rgb(255, 255, 255);
+
+    border: 2px solid black;
+    border-radius: 30px;
+
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.butt:hover {
+    transform: translateY(-15px);
+}
+
+.butt1 {
+    position: absolute;
+    margin-left: 550px;
+
+    font-family: "Quicksand", sans-serif;
+    font-size: 16px;
+    font-weight: 600;
+
+    padding: 12px 24px;
+    background-color: black;
+    color: rgb(255, 255, 255);
+
+    border: 2px solid black;
+    border-radius: 30px;
+
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.butt1:hover {
+    transform: translateY(15px);
+}
