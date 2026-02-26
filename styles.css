@@ -1,15 +1,68 @@
-#background {
-    width: 100%;
-    height: 97vh;
-}
-#bookButton {
-    position: absolute;
-    top: 65%;
-    left: 36%;
+/* 1) ביטול רווחים של הדפדפן */
+* { box-sizing: border-box; }
 
+html, body {
+  height: 100%;
+  margin: 0;
 }
-#exclamationMark {
-    position: absolute;
-    top: 65%;
-    left: 36%;
+
+/* 2) החדר הוא הקונטיינר */
+.room {
+  width: 100vw;
+  height: 100vh;
+  position: relative;              /* קריטי: הילדים absolute יחסית לחדר */
+  background: url("pictures/background.jpeg") center/cover no-repeat;
+  overflow: hidden;
+}
+
+/* 3) הספר בתוך החדר */
+.book-btn {
+  position: absolute;
+  bottom: 35px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 220px;
+  cursor: pointer;
+  z-index: 5;
+}
+
+/* ===== Modal ===== */
+.modal {
+  display: none;
+  position: fixed;
+  inset: 0;
+  background: rgba(0,0,0,0.85);
+  z-index: 9999;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+}
+
+.modal.show { display: flex; }
+
+.modal-content {
+  position: relative;
+  max-width: min(1000px, 92vw);
+  max-height: 90vh;
+}
+
+.modal-img {
+  width: 100%;
+  height: auto;
+  max-height: 90vh;
+  display: block;
+  border-radius: 10px;
+}
+
+.close-btn {
+  position: absolute;
+  top: -10px;
+  right: -10px;
+  width: 44px;
+  height: 44px;
+  border: none;
+  border-radius: 50%;
+  cursor: pointer;
+  font-size: 22px;
+  font-weight: bold;
 }
