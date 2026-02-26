@@ -1,13 +1,26 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="he">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>escapeRoom</title>
+    <title>Main Room</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <img id="background" src="pictures/background.jpeg" alt="Background">
-    <a id="bookButton" href="nextRoom.html"><img style="width: 140px; height: 160px;" src="pictures/btnBook.png" alt="Book"></a>
+
+    <!-- הספר שלוחצים עליו -->
+    <img src="pictures/btnBook.png" 
+         id="bookButton" 
+         class="book-btn"
+         alt="Book">
+
+    <!-- החלונית -->
+    <div id="bookPopup" class="popup">
+        <div class="popup-content">
+            <span class="close-btn">&times;</span>
+            <img src="pictures/BookText.jpeg" class="book-text">
+        </div>
+    </div>
+
+<script src="room1code.js"></script>
 </body>
 </html>
