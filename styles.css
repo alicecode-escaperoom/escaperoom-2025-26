@@ -64,3 +64,8 @@ html, body {
   font-size: 20px;
   font-weight: bold;
 }
+.book-btn {
+  bottom: 55px;
+  left: 45%;
+  width: 120px;
+}
