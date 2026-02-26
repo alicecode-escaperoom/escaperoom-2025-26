@@ -64,8 +64,30 @@ html, body {
   font-size: 20px;
   font-weight: bold;
 }
-.book-btn {
+.book-container {
+  position: absolute;
   bottom: 55px;
   left: 45%;
+  transform: translateX(-50%);
+}
+
+/* הספר */
+.book-btn {
   width: 120px;
+  display: block;
+}
+
+/* סימן הקריאה */
+.exclamation {
+  position: absolute;
+  top: -30px;
+  right: 20px;
+  width: 35px;
+  animation: pulse 1s infinite;
+}
+
+@keyframes pulse {
+  0% { transform: scale(1); }
+  50% { transform: scale(1.2); }
+  100% { transform: scale(1); }
 }
