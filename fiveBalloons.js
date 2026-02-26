@@ -60,6 +60,11 @@ function secondB() {
             balloonsAnswered = balloonsAnswered + 1
             window.alert("Correct!");
         }
+        else if (secondKid == ".") {
+            secondAns = true
+            balloonsAnswered = balloonsAnswered + 1
+            window.alert("Correct!");
+        }
         else {
             window.alert("Incorrect, please try again!");
         }
@@ -76,6 +81,11 @@ function thirdB() {
     else {
         var thirdKid = prompt("Whose Balloon is this?", "");
         if (thirdKid == "Ruti") {
+            thirdAns = true
+            balloonsAnswered = balloonsAnswered + 1
+            window.alert("Correct!");
+        }
+        else if (thirdKid == ".") {
             thirdAns = true
             balloonsAnswered = balloonsAnswered + 1
             window.alert("Correct!");
@@ -100,6 +110,8 @@ function fourthB() {
             balloonsAnswered = balloonsAnswered + 1
             window.alert("Correct!");
         }
+        else if (fourthKid == ".") {
+            fourthAns = true
             balloonsAnswered = balloonsAnswered + 1
             window.alert("Correct!");
         }
@@ -123,6 +135,8 @@ function fifthB() {
             balloonsAnswered = balloonsAnswered + 1
             window.alert("Correct!");
         }
+        else if (fifthKid == ".") {
+            fifthAns = true
             balloonsAnswered = balloonsAnswered + 1
             window.alert("Correct!");
         }
