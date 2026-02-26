@@ -65,16 +65,13 @@ html, body {
   font-weight: bold;
 }
 
-/* סימן קריאה בלי שום רקע */
+/* סימן קריאה */
 .exclamation {
   position: absolute;
-  top: -35px;
-  right: 30px;
-  font-size: 50px;
-  font-weight: bold;
-  color: red;
-  text-shadow: 0 0 10px red, 0 0 20px orange;
-  animation: pulse 1s infinite;
+  top: -30px;   /* כמה מעל הספר */
+  right: 25px;  /* מיקום אופקי מעל הספר */
+  width: 35px;
+  z-index: 10;
 }
 
 /* אפקט קפיצה קטן */
