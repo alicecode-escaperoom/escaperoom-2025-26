@@ -1,0 +1,8 @@
+body {
+  background-image: url("room1-weddingBG.png"); /* 1. Specify the image file */
+  background-repeat: no-repeat;            /* 2. Prevent the image from tiling */
+  background-position: center center;      /* 3. Center the image on the screen */
+  background-size: cover;                  /* 4. Ensure the image covers the whole area */
+  background-attachment: fixed;            /* 5. Keep the image fixed during scrolling */
+  margin: 0;                               /* 6. Remove default body margins */
+}
