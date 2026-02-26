@@ -83,3 +83,11 @@ html, body {
   50% { transform: scale(1.2); }
   100% { transform: scale(1); }
 }
+
+.magic-star {
+  position: absolute;
+  top: 38%;     /* תשחקי עם זה קצת אם צריך */
+  left: 47%;    /* תשחקי עם זה כדי לשים בדיוק על המדף */
+  width: 40px;  /* גודל הכוכב */
+  z-index: 5;
+}
