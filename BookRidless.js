@@ -22,7 +22,8 @@ document.querySelectorAll(".book").forEach(book => {
     }
 
     else if (bookNumber === "6") {
-      alert("Count only what is different.");
+      alert("Number only what is different.");
+      
       addDigit(1);
     }
 
