@@ -82,3 +82,16 @@ body {
   75%  { transform: translate(4px, 4px) scale(1.53); }
   100% { transform: translate(0, 0) scale(1.5); }
 }
+
+.doorbtn {
+  position: relative;            
+  height: 50vh;                 
+  width: 15vw;                  
+  background-color: rgba(0, 0, 0, 0.01); /* שחור עם שקיפות 1% */
+  border: none;
+  border-radius: 5px;          
+  float: right;                 
+  cursor: pointer;
+  right: 15%;
+  top: 20%;
+}

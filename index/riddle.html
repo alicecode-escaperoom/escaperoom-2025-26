@@ -20,6 +20,7 @@
   id="ghost"
 />
 
+<button class="doorbtn">here the button</button>
 
 <script>
 function checkAnswer() {
@@ -28,7 +29,7 @@ function checkAnswer() {
   const ghost = document.getElementById("ghost");
 
   if (userAnswer === correctAnswer) {
-    document.getElementById("result").innerText = "correct 👻";
+    document.getElementById("result").innerText = "Correct 👻 now get out the door!";
     ghost.classList.remove("chase");
   } else {
     document.getElementById("result").innerText = "Oh no! try again ";

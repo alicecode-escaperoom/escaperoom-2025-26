@@ -23,3 +23,9 @@ body {
 .key {
   width: 2cm;
 }
+
+.sign {
+  width: 40%;
+  top: 10%;
+  margin: 20px;
+}
