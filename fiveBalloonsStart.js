@@ -1,8 +1,3 @@
-function startB (){
-    window.alert("Good luck");
+function startB() {
     window.location.replace("fiveBalloons.html")
-}
-
-function startB1 (){
-    window.alert("Error!!!!!!!!!!!!!!!!!!😡");
 }
