@@ -67,11 +67,10 @@ html, body {
 
 /* סימן קריאה */
 .exclamation {
-  position: absolute;
-  top: -30px;   /* כמה מעל הספר */
-  right: 25px;  /* מיקום אופקי מעל הספר */
-  width: 35px;
-  z-index: 10;
+    position: absolute;
+    width: 30px;
+    top: -20px;
+    left: 40px;
 }
 
 /* אפקט קפיצה קטן */
