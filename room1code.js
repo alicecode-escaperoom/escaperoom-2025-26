@@ -18,7 +18,7 @@ popup.addEventListener("click", (e) => {
 const star = document.getElementById("magicStar");
 
 star.addEventListener("click", () => {
-  alert("לחצת על הכוכב!");
+    window.location.href = "BookText.html";
 });
 
 // סגירה עם ESC
