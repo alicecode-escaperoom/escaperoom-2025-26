@@ -68,10 +68,9 @@ html, body {
 /* סימן קריאה */
 .exclamation {
   position: absolute;
-  top: -30;
+  top: 30;
   left: 700;
   width: 100px;
-  z-index: 999;
 }
 
 /* אפקט קפיצה קטן */
