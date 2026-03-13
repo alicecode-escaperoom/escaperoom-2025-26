@@ -7,13 +7,14 @@ html, body {
 
 /* הרקע של החדר */
 .room {
+  position: relative;
   width: 100vw;
   height: 100vh;
-  position: relative;
-  background: url("pictures/background.jpeg") center/cover no-repeat;
-  overflow: hidden;
+  background-image: url("pictures/background.jpeg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
 }
-
 /* הספר הקטן בתחתית */
 .book-btn {
   position: absolute;
@@ -67,10 +68,11 @@ html, body {
 
 /* סימן קריאה */
 .exclamation {
-    position: absolute;
-    width: 30px;
-    top: -20px;
-    left: 40px;
+  position: absolute;
+  top: -25px;
+  right: -10px;
+  width: 30px;
+  z-index: 10;
 }
 
 /* אפקט קפיצה קטן */
