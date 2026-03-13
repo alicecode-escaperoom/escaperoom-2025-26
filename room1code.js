@@ -15,6 +15,12 @@ popup.addEventListener("click", (e) => {
   if (e.target === popup) popup.classList.remove("show");
 });
 
+const star = document.getElementById("magicStar");
+
+star.addEventListener("click", () => {
+  alert("לחצת על הכוכב!");
+});
+
 // סגירה עם ESC
 window.addEventListener("keydown", (e) => {
   if (e.key === "Escape") popup.classList.remove("show");
