@@ -14,12 +14,15 @@ html, body {
   overflow: hidden;
 }
 
+.book-container {
+  position: absolute;
+  bottom: 55px;
+  left: 45%;
+}
+
 /* הספר הקטן בתחתית */
 .book-btn {
-  position: absolute;
-  bottom: 55px;   /* תשני אם צריך */
-  left: 45%;      /* תשני אם צריך */
-  width: 120px;   /* גודל הספר הקטן */
+  width: 120px;
   cursor: pointer;
   z-index: 2;
 }
@@ -68,9 +71,9 @@ html, body {
 /* סימן קריאה */
 .exclamation {
   position: absolute;
-  top: 30;
-  left: 700;
-  width: 100px;
+  top: -30px;
+  right: -10px;
+  width: 40px;
 }
 
 /* אפקט קפיצה קטן */
