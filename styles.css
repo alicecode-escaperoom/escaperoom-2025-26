@@ -84,8 +84,8 @@ html, body {
 
 .magic-star {
     position: absolute;
-    top: 500px;
-    left: 400px;
+    top: 450px;
+    left: 450px;
     width: 60px;
     cursor: pointer;
 }
