@@ -81,10 +81,11 @@ html, body {
   100% { transform: scale(1); }
 }
 
-.magic-star{
-  position: absolute;
-  top: 38%;
-  left: 47%;
-  width: 40px;
-  z-index: 20;
+
+.magic-star {
+    position: absolute;
+    top: 200px;
+    left: 300px;
+    width: 60px;
+    cursor: pointer;
 }
