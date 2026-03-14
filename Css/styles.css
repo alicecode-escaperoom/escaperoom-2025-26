@@ -16,13 +16,14 @@ html, body {
 
 .book-container {
   position: absolute;
-  bottom: 10%;
+  bottom: 12%;
   left: 37%;
+  transform: translateX(-0%);
 }
 
 /* הספר הקטן בתחתית */
 .book-btn {
-  width: 120px;
+  width: 6vw;
   cursor: pointer;
   z-index: 2;
 }
