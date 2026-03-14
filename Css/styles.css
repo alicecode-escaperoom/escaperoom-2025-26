@@ -1,0 +1,98 @@
+* { box-sizing: border-box; }
+
+html, body {
+  height: 100%;
+  margin: 0;
+}
+
+/* הרקע של החדר */
+.room {
+  width: 100vw;
+  height: 100vh;
+  position: relative;
+  background: url("../pictures/background.jpeg") center/cover no-repeat;
+  overflow: hidden;
+}
+
+.book-container {
+  position: absolute;
+  bottom: 55px;
+  left: 45%;
+}
+
+/* הספר הקטן בתחתית */
+.book-btn {
+  width: 120px;
+  cursor: pointer;
+  z-index: 2;
+}
+
+/* ===== POPUP MODAL ===== */
+.modal {
+  display: none;
+  position: fixed;
+  inset: 0;
+  background: rgba(0,0,0,0.4);
+  z-index: 9999;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+}
+.modal.show { display: flex; }
+
+.modal-content {
+  position: relative;
+  max-width: min(1100px, 95vw);
+  max-height: 90vh;
+}
+
+.modal-img {
+  width: 100%;
+  height: auto;
+  max-height: 90vh;
+  border-radius: 10px;
+  display: block;
+}
+
+.close-btn {
+  position: absolute;
+  top: -12px;
+  right: -12px;
+  width: 42px;
+  height: 42px;
+  border: none;
+  border-radius: 50%;
+  cursor: pointer;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+/* סימן קריאה */
+.exclamation {
+  position: absolute;
+  top: -30px;
+  right: -10px;
+  width: 100px;
+  animation: glow 1.5s infinite;
+}
+
+/* אפקט קפיצה קטן */
+@keyframes pulse {
+  0% { transform: scale(1); }
+  50% { transform: scale(1.2); }
+  100% { transform: scale(1); }
+}
+
+
+.magic-star {
+  position: absolute;
+  top: 47%;
+  left: 26%;
+  width: 2.5%;
+}
+
+@keyframes glow {
+  0% { transform: scale(1); }
+  50% { transform: scale(1.15); }
+  100% { transform: scale(1); }
+}

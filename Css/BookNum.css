@@ -1,0 +1,15 @@
+* { box-sizing: border-box; }
+
+html, body {
+  height: 100%;
+  margin: 0;
+}
+
+/* הרקע של החדר */
+.room {
+  width: 100vw;
+  height: 100vh;
+  position: relative;
+  background: url("pictures/BookNum.png") center/cover no-repeat;
+  overflow: hidden;
+}
