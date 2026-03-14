@@ -106,9 +106,9 @@ html, body {
 /* סימן קריאה */
 .exclamation {
   position: absolute;
-  top: -30px;
-  right: -10px;
-  width: 100px;
+  top: -30%;
+  right: -10%;
+  width: 100%;
   animation: glow 1.5s infinite;
 }
 
@@ -141,4 +141,13 @@ html, body {
   height: auto;
   z-index: 2;
   pointer-events: none;
+}
+
+.roof-hatch {
+  position: absolute;
+  top: 2%;
+  right: 33%;
+  width: 12%;
+  height: auto;
+  z-index: 2;
 }
