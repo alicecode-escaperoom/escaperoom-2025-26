@@ -67,6 +67,27 @@ html, body {
   font-weight: bold;
 }
 
+.hint-btn {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  width: 52px;
+  height: 52px;
+  border: none;
+  border-radius: 50%;
+  background: #ffd54a;
+  color: #5c4300;
+  font-size: 26px;
+  cursor: pointer;
+  z-index: 10000;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.35);
+}
+
+.hint-btn:hover {
+  transform: scale(1.08);
+  background: #ffca28;
+}
+
 /* סימן קריאה */
 .exclamation {
   position: absolute;
