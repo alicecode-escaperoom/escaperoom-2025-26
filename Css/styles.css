@@ -10,7 +10,7 @@ html, body {
   width: 100vw;
   height: 100vh;
   position: relative;
-  background: url("pictures/background.jpeg") center/cover no-repeat;
+  background: url("../pictures/background.jpeg") center/cover no-repeat;
   overflow: hidden;
 }
 
