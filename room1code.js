@@ -18,7 +18,7 @@ popup.addEventListener("click", (e) => {
 const star = document.getElementById("magicStar");
 
 star.addEventListener("click", () => {
-    window.location.href = "BookText.html";
+    window.location.href = "BookRidless.html";
 });
 
 // סגירה עם ESC
