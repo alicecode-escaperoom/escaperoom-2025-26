@@ -131,3 +131,13 @@ html, body {
   50% { transform: scale(1.15); }
   100% { transform: scale(1); }
 }
+
+.ladder {
+  position: absolute;
+  top: 20%;
+  left: 48%;
+  width: 21%;
+  height: auto;
+  z-index: 2;
+  pointer-events: none;
+}
