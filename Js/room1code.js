@@ -10,7 +10,6 @@ closeBtn.addEventListener("click", () => {
   popup.classList.remove("show");
 });
 
-// סגירה בלחיצה על השחור מסביב
 popup.addEventListener("click", (e) => {
   if (e.target === popup) popup.classList.remove("show");
 });
@@ -18,10 +17,9 @@ popup.addEventListener("click", (e) => {
 const star = document.getElementById("magicStar");
 
 star.addEventListener("click", () => {
-    window.location.href = "BookRidless.html";
+  window.location.href = "BookNum.html";
 });
 
-// סגירה עם ESC
 window.addEventListener("keydown", (e) => {
   if (e.key === "Escape") popup.classList.remove("show");
 });
