@@ -69,23 +69,37 @@ html, body {
 
 .hint-btn {
   position: absolute;
-  top: 20px;
+  bottom: 20px;
   left: 20px;
-  width: 52px;
-  height: 52px;
+  width: 54px;
+  height: 54px;
   border: none;
   border-radius: 50%;
   background: #ffd54a;
-  color: #5c4300;
   font-size: 26px;
   cursor: pointer;
-  z-index: 10000;
-  box-shadow: 0 4px 10px rgba(0,0,0,0.35);
+  z-index: 10002;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.35);
 }
 
-.hint-btn:hover {
-  transform: scale(1.08);
-  background: #ffca28;
+.hint-message {
+  display: none;
+  position: absolute;
+  bottom: 85px;
+  left: 20px;
+  background: rgba(255, 236, 170, 0.98);
+  color: #4a3200;
+  padding: 10px 14px;
+  border-radius: 12px;
+  font-size: 16px;
+  line-height: 1.4;
+  max-width: 220px;
+  z-index: 10003;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.25);
+}
+
+.hint-message.show {
+  display: block;
 }
 
 /* סימן קריאה */
