@@ -14,6 +14,7 @@ html, body {
   overflow: hidden;
 }
 
+<<<<<<< Updated upstream:Css/styles.css
 .book-container {
   position: absolute;
   bottom: 55px;
@@ -22,9 +23,17 @@ html, body {
 
 /* הספר הקטן בתחתית */
 .book-btn {
+=======
+.book-btn {
+  position: absolute;
+  bottom: 55px;
+  left: 45%;
+>>>>>>> Stashed changes:styles.css
   width: 120px;
   cursor: pointer;
   z-index: 2;
+
+  position: absolute;
 }
 
 /* ===== POPUP MODAL ===== */
