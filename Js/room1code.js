@@ -16,6 +16,8 @@ const lockKeys = document.querySelectorAll(".lock-key[data-num]");
 
 const correctCode = "3612";
 
+let isUnlocked = false;
+
 bookBtn.addEventListener("click", () => {
   popup.classList.add("show");
 });
@@ -40,8 +42,14 @@ star.addEventListener("click", () => {
 });
 
 atticLock.addEventListener("click", () => {
-  lockModal.classList.add("show");
-  lockMessage.textContent = "";
+  if (isUnlocked) {
+    alert("🎉 יצאת מהחדר!");
+    // מעבר לחדר הבא אם תרצי
+    // window.location.href = "room2.html";
+  } else {
+    lockModal.classList.add("show");
+    lockMessage.textContent = "";
+  }
 });
 
 closeLockModal.addEventListener("click", () => {
@@ -68,16 +76,22 @@ clearLock.addEventListener("click", () => {
 });
 
 submitLock.addEventListener("click", () => {
+
   if (lockDisplay.value === correctCode) {
+
+    isUnlocked = true;
+
     lockMessage.textContent = "Unlocked!";
-    // שינוי תמונה
     atticLock.src = "../pictures/bracket.png";
+
     setTimeout(() => {
       lockModal.classList.remove("show");
-    }, 800);
+    }, 700);
+
   } else {
     lockMessage.textContent = "Wrong code. Try again.";
   }
+
 });
 
 window.addEventListener("keydown", (e) => {
