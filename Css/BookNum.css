@@ -23,6 +23,15 @@ body {
     outline: none;             
 }
 
+.back-arrow{
+  position:absolute;
+  top: 30px;
+  right: 30px;
+  width: 200px;
+  cursor:pointer;
+  z-index: 20;
+}
+
 #star1 { top: 52%; left: 6.5%; }
 #star2 { top: 52%; left: 27.5%; }
 #star3 { top: 52%; left: 39.5%; }
