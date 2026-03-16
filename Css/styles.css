@@ -1,45 +1,115 @@
-* { box-sizing: border-box; }
+* {
+  box-sizing: border-box;
+}
 
 html, body {
   height: 100%;
   margin: 0;
 }
 
-.room {
-  width: 100vw;
-  height: 100vh;
-  position: relative;
-  background: url("../pictures/background.jpeg") center/cover no-repeat;
+body {
   overflow: hidden;
 }
 
-<<<<<<< Updated upstream:Css/styles.css
+.room {
+  position: relative;
+  width: 100vw;
+  height: 100vh;
+  background: url("../pictures/background.jpeg") center center / cover no-repeat;
+  overflow: hidden;
+}
+
+/* ספר */
 .book-container {
   position: absolute;
-  bottom: 12%;
-  left: 37%;
+  bottom: 8%;
+  left: 40%;
+  width: 8%;
+  min-width: 70px;
+  max-width: 130px;
+  z-index: 4;
+  cursor: pointer;
 }
 
 .book-btn {
-  width: 120px;
-  cursor: pointer;
-  z-index: 2;
-
-  position: absolute;
+  display: block;
+  width: 100%;
+  height: auto;
 }
 
+/* סימן קריאה */
+.exclamation {
+  position: absolute;
+  top: -28%;
+  right: -12%;
+  width: 80%;
+  height: auto;
+}
+
+/* כוכב */
+.magic-star {
+  position: absolute;
+  top: 47%;
+  left: 27%;
+  width: 3.2%;
+  min-width: 24px;
+  max-width: 52px;
+  z-index: 3;
+  cursor: pointer;
+}
+
+/* סולם */
+.ladder {
+  position: absolute;
+  top: 20%; 
+  left: 48%; 
+  width: 21%;
+  min-width: 90px;
+  max-width: 220px;
+  height: auto;
+  z-index: 2;
+  pointer-events: none;
+}
+
+/* צוהר */
+.roof-hatch {
+  position: absolute;
+  top: 2.5%;
+  left: 62%;
+  width: 10%;
+  min-width: 70px;
+  max-width: 180px;
+  height: auto;
+  z-index: 3;
+}
+
+/* מנעול */
+.attic-lock {
+  position: absolute;
+  top: 11%;
+  left: 64.5%;
+  width: 3.3%;
+  min-width: 26px;
+  max-width: 58px;
+  height: auto;
+  z-index: 4;
+}
+
+/* חלונית */
 .modal {
   display: none;
   position: fixed;
   inset: 0;
-  background: rgba(0,0,0,0.4);
+  background: rgba(0, 0, 0, 0.35);
   z-index: 9999;
   align-items: center;
   justify-content: center;
   padding: 20px;
 }
 
-.modal.show { display: flex; }
+.modal.show {
+  display: flex;
+}
 
 .modal-content {
   position: relative;
@@ -48,11 +118,11 @@ html, body {
 }
 
 .modal-img {
+  display: block;
   width: 100%;
   height: auto;
   max-height: 90vh;
   border-radius: 10px;
-  display: block;
 }
 
 .close-btn {
@@ -68,6 +138,7 @@ html, body {
   font-weight: bold;
 }
 
+/* רמז */
 .hint-btn {
   position: absolute;
   bottom: 20px;
@@ -98,46 +169,4 @@ html, body {
 
 .hint-message.show {
   display: block;
-}
-
-.exclamation {
-  position: absolute;
-  top: -30%;
-  right: -10%;
-  width: 100%;
-}
-
-.magic-star {
-  position: absolute;
-  top: 47%;
-  left: 26%;
-  width: 2.5%;
-}
-
-.ladder {
-  position: absolute;
-  top: 20%;
-  left: 48%;
-  width: 21%;
-  height: auto;
-  z-index: 2;
-  pointer-events: none;
-}
-
-.roof-hatch {
-  position: absolute;
-  top: 2%;
-  right: 33%;
-  width: 12%;
-  height: auto;
-  z-index: 2;
-}
-
-.attic-lock {
-  position: absolute;
-  top: 10%;
-  right: 36.5%;
-  width: 4.5%;
-  height: auto;
-  z-index: 5;
 }
