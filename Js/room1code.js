@@ -3,6 +3,7 @@ const popup = document.getElementById("bookPopup");
 const closeBtn = document.getElementById("closePopup");
 const hintBtn = document.getElementById("hintBtn");
 const hintMessage = document.getElementById("hintMessage");
+const star = document.getElementById("magicStar");
 
 bookBtn.addEventListener("click", () => {
   popup.classList.add("show");
