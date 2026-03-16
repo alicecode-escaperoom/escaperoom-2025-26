@@ -25,7 +25,7 @@ hintBtn.addEventListener("click", (e) => {
 });
 
 star.addEventListener("click", () => {
-  window.location.href = "BookNum.html";
+    window.location.href = "BookNum.html";
 });
 
 window.addEventListener("keydown", (e) => {
