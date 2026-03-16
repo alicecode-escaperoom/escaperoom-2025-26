@@ -70,12 +70,11 @@ clearLock.addEventListener("click", () => {
 submitLock.addEventListener("click", () => {
   if (lockDisplay.value === correctCode) {
     lockMessage.textContent = "Unlocked!";
-    atticLock.style.display = "none";
+    // שינוי תמונה
+    atticLock.src = "../pictures/bracket.png";
     setTimeout(() => {
       lockModal.classList.remove("show");
-      lockDisplay.value = "";
-      lockMessage.textContent = "";
-    }, 700);
+    }, 800);
   } else {
     lockMessage.textContent = "Wrong code. Try again.";
   }
