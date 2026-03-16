@@ -13,6 +13,7 @@ html, body {
   overflow: hidden;
 }
 
+<<<<<<< Updated upstream:Css/styles.css
 .book-container {
   position: absolute;
   bottom: 12%;
@@ -20,9 +21,11 @@ html, body {
 }
 
 .book-btn {
-  width: 6vw;
+  width: 120px;
   cursor: pointer;
   z-index: 2;
+
+  position: absolute;
 }
 
 .modal {
