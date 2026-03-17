@@ -23,6 +23,43 @@ body {
     outline: none;             
 }
 
+#star1 { top: 52%; left: 6.5%; }
+#star2 { top: 52%; left: 27.5%; }
+#star3 { top: 52%; left: 39.5%; }
+#star4 { top: 52%; left: 58%; }
+#star5 { top: 52%; left: 74%; }
+#star6 { top: 52%; left: 88%; }
+
+
+.modal {
+    display: none; 
+    position: fixed;
+    z-index: 100;
+    left: 0; top: 0;
+    width: 100%; height: 100%;
+    background-color: rgba(0,0,0,0.8);
+}
+
+.modal-content {
+    position: relative;
+    margin: 2% auto;
+    padding: 20px;
+    width: 90%
+}
+
+.star-button {
+    position: absolute;
+    background-color: transparent; 
+    border: none;                 
+    cursor: pointer;              
+    border-radius: 50%;
+    width: 40px;                  
+    height: 40px;
+    z-index: 10;
+    transform: translate(-50%, -50%);
+    outline: none;             
+}
+
 .back-arrow{
   position:absolute;
   top: 30px;
@@ -31,10 +68,3 @@ body {
   cursor:pointer;
   z-index: 20;
 }
-
-#star1 { top: 52%; left: 6.5%; }
-#star2 { top: 52%; left: 27.5%; }
-#star3 { top: 52%; left: 39.5%; }
-#star4 { top: 52%; left: 58%; }
-#star5 { top: 52%; left: 74%; }
-#star6 { top: 52%; left: 88%; }
