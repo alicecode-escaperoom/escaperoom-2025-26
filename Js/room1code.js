@@ -4,6 +4,7 @@ const closeBtn = document.getElementById("closePopup");
 const hintBtn = document.getElementById("hintBtn");
 const hintMessage = document.getElementById("hintMessage");
 const star = document.getElementById("magicStar");
+
 const introScreen = document.getElementById("introScreen");
 const startGameBtn = document.getElementById("startGameBtn");
 
@@ -19,89 +20,139 @@ const lockKeys = document.querySelectorAll(".lock-key[data-num]");
 const winModal = document.getElementById("winModal");
 const closeWinModal = document.getElementById("closeWinModal");
 
-const correctCode = "3612";
+localStorage.removeItem("introSeen");
 
+const correctCode = "3612";
 let isUnlocked = false;
 
-bookBtn.addEventListener("click", () => {
-  popup.classList.add("show");
-});
+/* Book popup */
+if (bookBtn && popup) {
+  bookBtn.addEventListener("click", () => {
+    popup.classList.add("show");
+  });
+}
 
-closeBtn.addEventListener("click", () => {
-  popup.classList.remove("show");
-});
-
-popup.addEventListener("click", (e) => {
-  if (e.target === popup) {
+if (closeBtn && popup) {
+  closeBtn.addEventListener("click", () => {
     popup.classList.remove("show");
+  });
+}
+
+if (popup) {
+  popup.addEventListener("click", (e) => {
+    if (e.target === popup) {
+      popup.classList.remove("show");
+    }
+  });
+}
+
+/* Hint button */
+if (hintBtn && hintMessage) {
+  hintBtn.addEventListener("click", (e) => {
+    e.stopPropagation();
+    hintMessage.classList.toggle("show");
+  });
+}
+
+/* Star navigation */
+if (star) {
+  star.addEventListener("click", () => {
+    window.location.href = "BookNum.html";
+  });
+}
+
+/* Intro screen */
+if (startGameBtn) {
+  startGameBtn.addEventListener("click", () => {
+    localStorage.setItem("introSeen", "true");
+    document.documentElement.classList.remove("show-intro");
+  });
+}
+
+/* Lock click */
+if (atticLock && lockModal && lockMessage) {
+  atticLock.addEventListener("click", () => {
+    if (isUnlocked) {
+      if (winModal) {
+        winModal.classList.add("show");
+      }
+    } else {
+      lockModal.classList.add("show");
+      lockMessage.textContent = "";
+    }
+  });
+}
+
+/* Close lock modal */
+if (closeLockModal && lockModal) {
+  closeLockModal.addEventListener("click", () => {
+    lockModal.classList.remove("show");
+  });
+}
+
+if (lockModal) {
+  lockModal.addEventListener("click", (e) => {
+    if (e.target === lockModal) {
+      lockModal.classList.remove("show");
+    }
+  });
+}
+
+/* Keypad input */
+if (lockKeys.length && lockDisplay) {
+  lockKeys.forEach((key) => {
+    key.addEventListener("click", () => {
+      if (lockDisplay.value.length < 4) {
+        lockDisplay.value += key.dataset.num;
+      }
+    });
+  });
+}
+
+/* Clear lock input */
+if (clearLock && lockDisplay && lockMessage) {
+  clearLock.addEventListener("click", () => {
+    lockDisplay.value = "";
+    lockMessage.textContent = "";
+  });
+}
+
+/* Submit lock code */
+if (submitLock && lockDisplay && lockMessage && atticLock && lockModal) {
+  submitLock.addEventListener("click", () => {
+    if (lockDisplay.value === correctCode) {
+      isUnlocked = true;
+      lockMessage.textContent = "Unlocked!";
+      atticLock.src = "../pictures/bracket.png";
+
+      setTimeout(() => {
+        lockModal.classList.remove("show");
+        lockDisplay.value = "";
+        lockMessage.textContent = "";
+      }, 700);
+    } else {
+      lockMessage.textContent = "Wrong code. Try again.";
+    }
+  });
+}
+
+/* Close win modal */
+if (closeWinModal && winModal) {
+  closeWinModal.addEventListener("click", () => {
+    winModal.classList.remove("show");
+  });
+}
+
+/* Escape key */
+window.addEventListener("keydown", (e) => {
+  if (e.key === "Escape") {
+    if (popup) popup.classList.remove("show");
+    if (lockModal) lockModal.classList.remove("show");
+    if (winModal) winModal.classList.remove("show");
   }
-});
-
-hintBtn.addEventListener("click", (e) => {
-  e.stopPropagation();
-  hintMessage.classList.toggle("show");
-});
-
-star.addEventListener("click", () => {
-  window.location.href = "BookNum.html";
 });
 
 startGameBtn.addEventListener("click", () => {
-  introScreen.style.display = "none";
-});
-
-atticLock.addEventListener("click", () => {
-  if (isUnlocked) {
-    winModal.classList.add("show");
-  } else {
-    lockModal.classList.add("show");
-    lockMessage.textContent = "";
-  }
-});
-
-closeLockModal.addEventListener("click", () => {
-  lockModal.classList.remove("show");
-});
-
-lockModal.addEventListener("click", (e) => {
-  if (e.target === lockModal) {
-    lockModal.classList.remove("show");
-  }
-});
-
-lockKeys.forEach((key) => {
-  key.addEventListener("click", () => {
-    if (lockDisplay.value.length < 4) {
-      lockDisplay.value += key.dataset.num;
-    }
-  });
-});
-
-clearLock.addEventListener("click", () => {
-  lockDisplay.value = "";
-  lockMessage.textContent = "";
-});
-
-submitLock.addEventListener("click", () => {
-  if (lockDisplay.value === correctCode) {
-    isUnlocked = true;
-    lockMessage.textContent = "Unlocked!";
-    atticLock.src = "../pictures/bracket.png";
-    setTimeout(() => {
-      lockModal.classList.remove("show");
-    }, 700);
-  } else {
-    lockMessage.textContent = "Wrong code. Try again.";
-  }
-});
-
-window.addEventListener("keydown", (e) => {
-  if (e.key === "Escape") {
-    popup.classList.remove("show");
-    lockModal.classList.remove("show");
-  }
-});
-
-closeWinModal.addEventListener("click", () => {
-  winModal.classList.remove("show");
+  localStorage.setItem("introSeen", "true");
+  document.documentElement.classList.remove("show-intro");
 });
