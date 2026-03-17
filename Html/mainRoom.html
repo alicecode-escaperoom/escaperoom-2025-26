@@ -7,6 +7,20 @@
   <link rel="stylesheet" href="../Css/styles.css" />
 </head>
 <body>
+  <div id="introScreen" class="intro-screen">
+  <div class="intro-box">
+    <h1>🔐 Escape Room 🔐</h1>
+    <p>
+      Welcome to the Escape Room!<br><br>
+      🔍 Look for hints in the room<br>
+      📚 Click on objects to reveal information<br>
+      🔢 Find the secret code<br>
+      🔓 Unlock the lock to escape<br><br>
+      💡 Good luck! 💡
+    </p>
+    <button id="startGameBtn">Start Game</button>
+  </div>
+</div>
   <div class="room">
   <div class="book-container" id="bookButton">
     <img src="../pictures/btnBook.png" class="book-btn" alt="book">
@@ -54,7 +68,14 @@
       <p id="lockMessage" class="lock-message"></p>
     </div>
   </div>
-</div>
+ </div>
+   <div id="winModal" class="win-modal">
+   <div class="win-box">
+     <h2>🎉 Well Done! 🎉</h2>
+     <p>You escaped the room successfully!</p>
+     <button id="closeWinModal" class="win-btn">Continue</button>
+   </div>
+ </div>
   <script src="../Js/room1code.js"></script>
 </body>
 </html>

@@ -4,6 +4,8 @@ const closeBtn = document.getElementById("closePopup");
 const hintBtn = document.getElementById("hintBtn");
 const hintMessage = document.getElementById("hintMessage");
 const star = document.getElementById("magicStar");
+const introScreen = document.getElementById("introScreen");
+const startGameBtn = document.getElementById("startGameBtn");
 
 const atticLock = document.getElementById("atticLock");
 const lockModal = document.getElementById("lockModal");
@@ -13,6 +15,9 @@ const lockMessage = document.getElementById("lockMessage");
 const clearLock = document.getElementById("clearLock");
 const submitLock = document.getElementById("submitLock");
 const lockKeys = document.querySelectorAll(".lock-key[data-num]");
+
+const winModal = document.getElementById("winModal");
+const closeWinModal = document.getElementById("closeWinModal");
 
 const correctCode = "3612";
 
@@ -41,11 +46,13 @@ star.addEventListener("click", () => {
   window.location.href = "BookNum.html";
 });
 
+startGameBtn.addEventListener("click", () => {
+  introScreen.style.display = "none";
+});
+
 atticLock.addEventListener("click", () => {
   if (isUnlocked) {
-    alert("🎉 יצאת מהחדר!");
-    // מעבר לחדר הבא אם תרצי
-    // window.location.href = "room2.html";
+    winModal.classList.add("show");
   } else {
     lockModal.classList.add("show");
     lockMessage.textContent = "";
@@ -76,22 +83,16 @@ clearLock.addEventListener("click", () => {
 });
 
 submitLock.addEventListener("click", () => {
-
   if (lockDisplay.value === correctCode) {
-
     isUnlocked = true;
-
     lockMessage.textContent = "Unlocked!";
     atticLock.src = "../pictures/bracket.png";
-
     setTimeout(() => {
       lockModal.classList.remove("show");
     }, 700);
-
   } else {
     lockMessage.textContent = "Wrong code. Try again.";
   }
-
 });
 
 window.addEventListener("keydown", (e) => {
@@ -99,4 +100,8 @@ window.addEventListener("keydown", (e) => {
     popup.classList.remove("show");
     lockModal.classList.remove("show");
   }
+});
+
+closeWinModal.addEventListener("click", () => {
+  winModal.classList.remove("show");
 });
