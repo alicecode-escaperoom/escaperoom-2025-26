@@ -1,33 +1,34 @@
-// Room 11 code
 const backArrow = document.getElementById("backArrow");
 
-backArrow.addEventListener("click", () => {
-    window.location.href = "mainRoom.html";
-});
+if (backArrow) {
+    backArrow.addEventListener("click", () => {
+        window.location.href = "mainRoom.html";
+    });
+}
 
 let currentStep = 0;
-const expectedSequence = [2, 5, 6, 3]; 
+const expectedSequence = [2, 5, 6, 3];
 let collectedCode = [];
 
 const puzzleData = {
     2: {
-        img: "../pictures/open_book2.png", 
-        hint: "הינשוף שומר על החוכמה. ספרו רק מסגרות שלמות.",
+        img: "../pictures/open_book2.jpeg",
+        hint: "The owl guards wisdom. Count only complete frames.",
         digit: 3
     },
     5: {
-        img: "../pictures/open_book5.png",
-        hint: "העבר אהב קישוטים. ספרו רק סמלים עצמאיים.",
+        img: "../pictures/open_book5.jpeg",
+        hint: "The past loved decorations. Count only independent symbols.",
         digit: 6
     },
     6: {
-        img: "../pictures/open_book6.png",
-        hint: "מה שלא מתאים לאחרים חייב להיספר.",
+        img: "../pictures/open_book6.jpeg",
+        hint: "What does not match the others must be counted.",
         digit: 1
     },
     3: {
-        img: "../pictures/open_book3.png",
-        hint: "לא ההתחלה, לא הסוף. רק מה שבמרכז.",
+        img: "../pictures/open_book3.jpeg",
+        hint: "Not the beginning, not the end. Only what is in the center.",
         digit: 2
     }
 };
@@ -38,7 +39,7 @@ function checkStar(bookNum) {
     if (bookNum === expectedBook) {
         openPuzzle(bookNum);
     } else {
-        alert("שום דבר מעניין כאן כרגע...");
+        alert("Nothing interesting here right now...");
     }
 }
 
@@ -49,22 +50,21 @@ function openPuzzle(num) {
 
     pimg.src = puzzleData[num].img;
     hText.innerText = puzzleData[num].hint;
-    hText.classList.add("hidden"); 
+    hText.classList.add("hidden");
     modal.style.display = "block";
 
     if (collectedCode.length === currentStep) {
         collectedCode.push(puzzleData[num].digit);
-        console.log("ספרות שנאספו: " + collectedCode.join(""));
+        console.log("Collected digits: " + collectedCode.join(""));
     }
 }
 
 function closePuzzle() {
     document.getElementById("puzzleModal").style.display = "none";
-    // אם פתחנו את החידה הנכונה, נתקדם לשלב הבא ברצף
-    currentStep++; 
-    
+    currentStep++;
+
     if (currentStep === expectedSequence.length) {
-        alert("אספת את כל הרמזים! עכשיו נסי לפתוח את המנעול.");
+        alert("You collected all the clues! Now try to unlock the lock.");
     }
 }
 

@@ -1,6 +1,5 @@
-/* styleA1.css */
 body {
-    background-image: url("../pictures/BookNum.png"); 
+    background-image: url("../pictures/BookNum.png");
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-size: 100% 100%;
@@ -12,15 +11,15 @@ body {
 
 .star-button {
     position: absolute;
-    background-color: transparent; 
-    border: none;                 
-    cursor: pointer;              
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
     border-radius: 50%;
-    width: 40px;                  
+    width: 40px;
     height: 40px;
     z-index: 10;
     transform: translate(-50%, -50%);
-    outline: none;             
+    outline: none;
 }
 
 #star1 { top: 52%; left: 6.5%; }
@@ -30,41 +29,70 @@ body {
 #star5 { top: 52%; left: 74%; }
 #star6 { top: 52%; left: 88%; }
 
-
 .modal {
-    display: none; 
+    display: none;
     position: fixed;
     z-index: 100;
-    left: 0; top: 0;
-    width: 100%; height: 100%;
-    background-color: rgba(0,0,0,0.8);
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
 }
 
 .modal-content {
     position: relative;
     margin: 2% auto;
     padding: 20px;
-    width: 90%
+    width: 90%;
+    text-align: center;
 }
 
-.star-button {
+#puzzleImage {
+    max-width: 90%;
+    max-height: 80vh;
+    border-radius: 12px;
+}
+
+.close-btn {
     position: absolute;
-    background-color: transparent; 
-    border: none;                 
-    cursor: pointer;              
-    border-radius: 50%;
-    width: 40px;                  
-    height: 40px;
-    z-index: 10;
-    transform: translate(-50%, -50%);
-    outline: none;             
+    top: 20px;
+    right: 30px;
+    color: white;
+    font-size: 40px;
+    cursor: pointer;
 }
 
-.back-arrow{
-  position:absolute;
-  top: 30px;
-  right: 30px;
-  width: 200px;
-  cursor:pointer;
-  z-index: 20;
+.hint-container {
+    margin-top: 20px;
+    text-align: center;
+}
+
+.hint-btn {
+    background: #ffd54a;
+    border: none;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    font-size: 24px;
+    cursor: pointer;
+}
+
+.hidden {
+    display: none;
+}
+
+#hintText {
+    margin-top: 15px;
+    color: white;
+    font-size: 20px;
+}
+
+.back-arrow {
+    position: absolute;
+    top: 30px;
+    right: 30px;
+    width: 80px;
+    cursor: pointer;
+    z-index: 20;
 }
