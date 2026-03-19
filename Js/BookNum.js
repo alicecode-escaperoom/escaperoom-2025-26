@@ -21,7 +21,7 @@ let collectedCode = [];
 
 const puzzleData = {
     2: {
-        img: "../pictures/open_book2.jpeg",
+        img: "../pictures/open_book2.png",
         hint: "The owl guards wisdom. Count only complete frames.",
         digit: 3
     },
