@@ -1,8 +1,17 @@
 const backArrow = document.getElementById("backArrow");
 
+const hintButton = document.getElementById("hintButton");
+const hintBox = document.getElementById("hintBox");
+
 if (backArrow) {
     backArrow.addEventListener("click", () => {
         window.location.href = "mainRoom.html";
+    });
+}
+
+if (hintButton && hintBox) {
+    hintButton.addEventListener("click", () => {
+        hintBox.classList.toggle("show");
     });
 }
 
