@@ -20,7 +20,7 @@
   id="ghost"
 />
 
-<button class="doorbtn">here the button</button>
+<button  onclick="goToPage()" class="doorbtn">here the button</button>
 
 <script>
 function checkAnswer() {
@@ -35,6 +35,10 @@ function checkAnswer() {
     document.getElementById("result").innerText = "Oh no! try again ";
     ghost.classList.add("chase");
   }
+}
+
+function goToPage() {
+  window.location.href = "test.html";
 }
 </script>
 
