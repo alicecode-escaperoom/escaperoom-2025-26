@@ -85,9 +85,9 @@ body {
 
 .doorbtn {
   position: relative;            
-  height: 50vh;                 
-  width: 15vw;                  
-  background-color: rgba(0, 0, 0, 0.01); /* שחור עם שקיפות 1% */
+  height: 70vh;                 
+  width: 30vw;                  
+  background-color: rgba(0, 0, 0, 0.01); 
   border: none;
   border-radius: 5px;          
   float: right;                 
