@@ -22,7 +22,7 @@ const puzzleData = {
         digit: 6
     },
     6: {
-        img: "../pictures/open_book6.jpeg",
+        img: "../pictures/open_book6.png",
         hint: "What does not match the others must be counted.",
         digit: 1
     },
