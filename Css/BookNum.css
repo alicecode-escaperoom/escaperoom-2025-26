@@ -90,9 +90,9 @@ body {
 
 .back-arrow {
     position: absolute;
-    top: 30px;
+    top: 45px;
     right: 30px;
-    width: 80px;
+    width: 150px;
     cursor: pointer;
     z-index: 20;
 }
