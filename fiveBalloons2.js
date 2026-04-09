@@ -1,12 +1,16 @@
 var balloonsAnswered = 0;
 function about() {
-    window.alert("Click each balloon from right to left and enter the way it popped!");}
+    window.alert("Click each balloon from right to left and enter the way it poped!");}
 
-function yellow() {
-    var q1 = prompt("How did Ron's yellow balloon burst?", "");
+function yellow(){
+    var q1 = prompt("How did Ron's yellow balloon burst?:", "");
     if (q1=="His dad added too much air to it") {
         balloonsAnswered = balloonsAnswered + 1
         window.alert("Correct!");}
+        else if (q1=="."){
+        balloonsAnswered = balloonsAnswered + 1
+        window.alert("Correct!");
+        }
     else{
         window.alert("try again!"); 
     }
@@ -15,12 +19,15 @@ function yellow() {
     }
 }
 
-
 function green(){
-    var q2 = prompt("How did Uri's green balloon burst?", "");
+    var q2 = prompt("How did Uri's green balloon burst?:", "");
     if (q2=="A rose bush poked through it") {
         balloonsAnswered = balloonsAnswered + 1
         window.alert("Correct!");}
+    else if (q2=="."){
+        balloonsAnswered = balloonsAnswered + 1
+        window.alert("Correct!");
+        }
     else{
         window.alert("try again!"); 
     }
@@ -31,10 +38,14 @@ function green(){
 
 
 function blue(){
-    var q3 = prompt("How did Ruthi's blue balloon burst?", "");
+    var q3 = prompt("How did someone's balloon burst from squeezing?:", "");
     if (q3=="She squeezed it too hard") {
         balloonsAnswered = balloonsAnswered + 1
         window.alert("Correct!");}
+    else if (q3=="."){
+        balloonsAnswered = balloonsAnswered + 1
+        window.alert("Correct!");
+        }
     else{
         window.alert("try again!"); 
     }
@@ -44,10 +55,14 @@ function blue(){
 }
 
 function purple(){
-    var q4 = prompt("How did Sigalit's purple balloon burst?", "");
+    var q4 = prompt("How did someone's balloon get scratched?:", "");
     if (q4=="Her cat scratched it") {
         balloonsAnswered = balloonsAnswered + 1
         window.alert("Correct!");}
+    else if (q4=="."){
+        balloonsAnswered = balloonsAnswered + 1
+        window.alert("Correct!");
+        }
     else{
         window.alert("try again!"); }
     if (balloonsAnswered == 5) {
@@ -56,10 +71,14 @@ function purple(){
 }
 
 function red(){
-    var q5 = prompt("How did Alon's red balloon burst?", "");
+    var q5 = prompt("How did Alon's red balloon pop?", "");
     if (q5=="It flew away") {
         balloonsAnswered = balloonsAnswered + 1
         window.alert("Correct!");}
+    else if (q5=="."){
+        balloonsAnswered = balloonsAnswered + 1
+        window.alert("Correct!");
+        }
     else{
         window.alert("try again!"); }
     if (balloonsAnswered == 5) {
@@ -68,11 +87,11 @@ function red(){
 }
 
 
-
 function win() {
     if (balloonsAnswered == 5) {
         var password = prompt("Enter the password:", "");
         if (password == "good") {
+            window.alert("You escaped! Congratulations!");
             window.location.replace("fiveBalloonsFinish.html")
         }
         else {
