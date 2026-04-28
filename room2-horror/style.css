@@ -1,0 +1,47 @@
+html, body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+}
+
+body {
+  background-image: url("img/bgpic.png");
+  background-repeat: no-repeat;     /* show once */
+  background-position: center;      /* center */
+  background-size: cover;           /* FULL SCREEN */
+}
+
+
+.ghost {
+  position: absolute;
+  top: 45%;
+  left: 58%;
+  transform: translate(-50%, -50%);
+}
+
+
+.key {
+  width: 2cm;
+}
+
+.sign {
+  width: 40%;
+  top: 10%;
+  margin: 20px;
+}
+
+
+  .clickable-image {
+            position: absolute;
+            top: 490px;   
+            left: 250px;     
+            width: 120px;    
+            cursor: pointer; 
+            border: 2px solid transparent;
+            transition: all 0.3s;
+        }
+        
+        .clickable-image:hover {
+            opacity: 0.8;   
+            border: 2px solid #ffd900;
+        }

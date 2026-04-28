@@ -1,0 +1,19 @@
+#finishBalloonDiv {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.finishImages {
+  height: 200px;
+}
+
+.center {
+    text-align: center;
+    font-family: SchoolBell;
+}
+
+#heart {
+    color:red;
+    font-size:50px;
+}

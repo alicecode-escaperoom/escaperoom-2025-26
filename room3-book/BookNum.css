@@ -1,0 +1,138 @@
+body {
+    background-image: url("pictures/BookNum.png");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: 100% 100%;
+    background-position: center;
+    margin: 0;
+    height: 100vh;
+    width: 100vw;
+}
+
+.star-button {
+    position: absolute;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    z-index: 10;
+    transform: translate(-50%, -50%);
+    outline: none;
+}
+
+#star1 { top: 52%; left: 6.5%; }
+#star2 { top: 52%; left: 27.5%; }
+#star3 { top: 52%; left: 39.5%; }
+#star4 { top: 52%; left: 58%; }
+#star5 { top: 52%; left: 74%; }
+#star6 { top: 52%; left: 88%; }
+
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 100;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+.modal-content {
+    position: relative;
+    margin: 2% auto;
+    padding: 20px;
+    width: 90%;
+    text-align: center;
+}
+
+#puzzleImage {
+    max-width: 90%;
+    max-height: 80vh;
+    border-radius: 12px;
+}
+
+.close-btn {
+    position: absolute;
+    top: 20px;
+    right: 30px;
+    color: white;
+    font-size: 40px;
+    cursor: pointer;
+}
+
+.hint-container {
+    margin-top: 20px;
+    text-align: center;
+}
+
+.hint-btn {
+    background: #ffd54a;
+    border: none;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    font-size: 24px;
+    cursor: pointer;
+}
+
+.hidden {
+    display: none;
+}
+
+#hintText {
+    margin-top: 15px;
+    color: white;
+    font-size: 20px;
+}
+
+.back-arrow {
+    position: absolute;
+    top: 45px;
+    right: 30px;
+    width: 150px;
+    cursor: pointer;
+    z-index: 20;
+}
+
+.hint-button {
+    position: fixed;
+    bottom: 25px;
+    left: 25px;
+    width: 60px;
+    height: 60px;
+    border: none;
+    border-radius: 50%;
+    background: #ffd54a;
+    color: #5a3b00;
+    font-size: 28px;
+    cursor: pointer;
+    z-index: 200;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.35);
+}
+
+.hint-button:hover {
+    background: #ffcc33;
+}
+
+.hint-box {
+    display: none;
+    position: fixed;
+    bottom: 95px;
+    left: 25px;
+    max-width: 260px;
+    background: rgba(255, 240, 180, 0.98);
+    color: #4a3200;
+    padding: 12px 16px;
+    border-radius: 12px;
+    font-size: 18px;
+    line-height: 1.4;
+    z-index: 201;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+}
+
+.hint-box.show {
+    display: block;
+}

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>You Escaped Room 2!</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .escaped-box {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            background: rgba(0, 0, 0, 0.75);
+            color: #fff;
+            padding: 40px 50px;
+            border-radius: 16px;
+            text-align: center;
+            font-family: 'Courier New', monospace;
+        }
+        .escaped-box h1 { margin: 0 0 12px; font-size: 2rem; }
+        .escaped-box p  { margin: 0 0 24px; font-size: 1.1rem; }
+        .next-btn {
+            padding: 12px 28px;
+            font-size: 1rem;
+            font-family: 'Courier New', monospace;
+            background: #ffd900;
+            color: #1a1a1a;
+            border: none;
+            border-radius: 8px;
+            cursor: pointer;
+        }
+        .next-btn:hover { background: #ffe84d; }
+    </style>
+</head>
+<body>
+    <div class="escaped-box">
+        <h1>👻 You escaped the horror room!</h1>
+        <p>Well done — you survived...</p>
+        <button class="next-btn" onclick="window.location.href='../room3-book/mainRoom.html'">
+            Continue →
+        </button>
+    </div>
+</body>
+</html>
