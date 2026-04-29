@@ -23,6 +23,7 @@ checkBtn.onclick = () => {
   if (userCode === "987") {
     message.textContent = "נכון! הכספת נפתחה 🎉";
     message.style.color = "green";
+    setTimeout(() => { window.location.href = "../escapeRoomFinish.html"; }, 1500);
   } else {
     message.textContent = "קוד שגוי, נסה/י שוב";
     message.style.color = "red";
