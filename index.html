@@ -4,9 +4,78 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Escape Room</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Architects+Daughter&family=Schoolbell&display=swap" rel="stylesheet">
+    <style>
+        body {
+            margin: 0;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            background-color: #fff4fe;
+            font-family: 'Architects Daughter', cursive;
+            text-align: center;
+            padding: 40px 20px;
+        }
+
+        .emoji-row {
+            font-size: 2.2rem;
+            margin-bottom: 18px;
+            letter-spacing: 10px;
+        }
+
+        h1 {
+            font-size: 3rem;
+            margin: 0 0 14px;
+            color: #3a3a3a;
+        }
+
+        .subtitle {
+            font-size: 1.2rem;
+            color: #7a5a7a;
+            margin: 0 0 10px;
+            font-weight: normal;
+        }
+
+        .rooms-hint {
+            font-size: 1rem;
+            color: #aaa;
+            margin: 0 0 40px;
+        }
+
+        .start-btn {
+            padding: 14px 40px;
+            font-size: 1.1rem;
+            font-family: 'Architects Daughter', cursive;
+            background: #e8a0e8;
+            color: #fff;
+            border: none;
+            border-radius: 10px;
+            cursor: pointer;
+            transition: background 0.2s;
+        }
+
+        .start-btn:hover { background: #d070d0; }
+
+        #heart {
+            font-size: 1.6rem;
+            margin-top: 36px;
+            color: #e8a0e8;
+        }
+    </style>
 </head>
 <body>
-    <a href="room1-balloons/fiveBalloonsStart.html">Start the Escape Room</a>
+    <div class="emoji-row">🎈 👻 📚 💍</div>
+    <h1>Escape Room</h1>
+    <p class="subtitle">Can you make it through all four rooms?</p>
+    <p class="rooms-hint">Balloons · Horror · Books · Wedding</p>
+    <button class="start-btn" onclick="window.location.href='room1-balloons/fiveBalloonsStart.html'">
+        Start →
+    </button>
+    <p id="heart">♡</p>
     <script src="devmenu.js"></script>
 </body>
 </html>
