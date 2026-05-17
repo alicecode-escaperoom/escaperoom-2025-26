@@ -1,5 +1,7 @@
 # Escape Room - Alicecode mid-year project 2025-2026
 
+<img src="alicecode%20girl%20icon.avif" height="80" alt="AliceCode Girl"> <img src="alicecode%20logo%20.avif" height="80" alt="AliceCode Logo">
+
 A browser-based escape room game with four themed rooms. Solve the puzzles in each room to advance to the next one and escape!
 
 ## Play Now
