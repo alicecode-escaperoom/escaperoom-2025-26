@@ -1,4 +1,4 @@
-# Escape Room 2025-26
+# Escape Room - Alicecode mid-year project 2025-2026
 
 A browser-based escape room game with four themed rooms. Solve the puzzles in each room to advance to the next one and escape!
 
